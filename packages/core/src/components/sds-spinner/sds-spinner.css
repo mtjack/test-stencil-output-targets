@@ -1,0 +1,28 @@
+:host {
+  display: block;
+}
+
+.check {
+  height: 34px;
+  width: 34px;
+}
+
+.check path {
+  fill: none;
+  stroke-width: 2.25;
+  stroke-dasharray: 23;
+  stroke-dashoffset: 0;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.check.animating path {
+  animation: draw 0.5s cubic-bezier(0.895, 0.03, 0.685, 0.22) backwards;
+  animation-direction: reverse;
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: -23;
+  }
+}

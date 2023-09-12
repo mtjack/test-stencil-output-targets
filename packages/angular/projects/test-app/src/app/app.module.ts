@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 
-import { Component2Module } from 'component-library';
+import { Component2Module, SdsBtnModule, SdsIconModule, SdsSpinnerModule } from 'component-library';
 
 @NgModule({
   declarations: [
@@ -12,6 +12,8 @@ import { Component2Module } from 'component-library';
   imports: [
     BrowserModule,
     Component2Module,
+    SdsBtnModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
